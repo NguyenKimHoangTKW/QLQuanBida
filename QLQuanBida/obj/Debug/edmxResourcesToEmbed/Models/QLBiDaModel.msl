@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbBidaModelStoreContainer" CdmEntityContainer="dbBidaEntities">
+    <EntitySetMapping Name="Bans">
+      <EntityTypeMapping TypeName="dbBidaModel.Ban">
+        <MappingFragment StoreEntitySet="Ban">
+          <ScalarProperty Name="IDBan" ColumnName="IDBan" />
+          <ScalarProperty Name="TenBan" ColumnName="TenBan" />
+          <ScalarProperty Name="IDKV" ColumnName="IDKV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChamCongs">
+      <EntityTypeMapping TypeName="dbBidaModel.ChamCong">
+        <MappingFragment StoreEntitySet="ChamCong">
+          <ScalarProperty Name="idChamCong" ColumnName="idChamCong" />
+          <ScalarProperty Name="NgayLam" ColumnName="NgayLam" />
+          <ScalarProperty Name="VaoLam" ColumnName="VaoLam" />
+          <ScalarProperty Name="TanLam" ColumnName="TanLam" />
+          <ScalarProperty Name="idNV" ColumnName="idNV" />
+          <ScalarProperty Name="CaLam" ColumnName="CaLam" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CKKMs">
+      <EntityTypeMapping TypeName="dbBidaModel.CKKM">
+        <MappingFragment StoreEntitySet="CKKM">
+          <ScalarProperty Name="idCKKM" ColumnName="idCKKM" />
+          <ScalarProperty Name="MaCKKM" ColumnName="MaCKKM" />
+          <ScalarProperty Name="TuGiaTri" ColumnName="TuGiaTri" />
+          <ScalarProperty Name="DenGiaTri" ColumnName="DenGiaTri" />
+          <ScalarProperty Name="MucCK" ColumnName="MucCK" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CTHDBans">
+      <EntityTypeMapping TypeName="dbBidaModel.CTHDBan">
+        <MappingFragment StoreEntitySet="CTHDBan">
+          <ScalarProperty Name="idHD" ColumnName="idHD" />
+          <ScalarProperty Name="tongTien" ColumnName="tongTien" />
+          <ScalarProperty Name="NgayXuatHD" ColumnName="NgayXuatHD" />
+          <ScalarProperty Name="idBan" ColumnName="idBan" />
+          <ScalarProperty Name="idMH" ColumnName="idMH" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CTKhuyenMais">
+      <EntityTypeMapping TypeName="dbBidaModel.CTKhuyenMai">
+        <MappingFragment StoreEntitySet="CTKhuyenMai">
+          <ScalarProperty Name="idCTKM" ColumnName="idCTKM" />
+          <ScalarProperty Name="MaCTKM" ColumnName="MaCTKM" />
+          <ScalarProperty Name="TenCTKM" ColumnName="TenCTKM" />
+          <ScalarProperty Name="LoaiKM" ColumnName="LoaiKM" />
+          <ScalarProperty Name="TuNgay" ColumnName="TuNgay" />
+          <ScalarProperty Name="DenNgay" ColumnName="DenNgay" />
+          <ScalarProperty Name="SuDung" ColumnName="SuDung" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DanhMucSPBs">
+      <EntityTypeMapping TypeName="dbBidaModel.DanhMucSPB">
+        <MappingFragment StoreEntitySet="DanhMucSPB">
+          <ScalarProperty Name="idDMSPB" ColumnName="idDMSPB" />
+          <ScalarProperty Name="TenDMSPB" ColumnName="TenDMSPB" />
+          <ScalarProperty Name="MaDMSPB" ColumnName="MaDMSPB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DonViTinhs">
+      <EntityTypeMapping TypeName="dbBidaModel.DonViTinh">
+        <MappingFragment StoreEntitySet="DonViTinh">
+          <ScalarProperty Name="IDDVT" ColumnName="IDDVT" />
+          <ScalarProperty Name="MaDVT" ColumnName="MaDVT" />
+          <ScalarProperty Name="TenDVT" ColumnName="TenDVT" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GroupKHs">
+      <EntityTypeMapping TypeName="dbBidaModel.GroupKH">
+        <MappingFragment StoreEntitySet="GroupKH">
+          <ScalarProperty Name="idKH" ColumnName="idKH" />
+          <ScalarProperty Name="MaGroupKH" ColumnName="MaGroupKH" />
+          <ScalarProperty Name="TenNhom" ColumnName="TenNhom" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GuiCoes">
+      <EntityTypeMapping TypeName="dbBidaModel.GuiCo">
+        <MappingFragment StoreEntitySet="GuiCo">
+          <ScalarProperty Name="idGuiCo" ColumnName="idGuiCo" />
+          <ScalarProperty Name="TenMHGui" ColumnName="TenMHGui" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="idKH" ColumnName="idKH" />
+          <ScalarProperty Name="idNV" ColumnName="idNV" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+          <ScalarProperty Name="Ngaygui" ColumnName="Ngaygui" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HDBans">
+      <EntityTypeMapping TypeName="dbBidaModel.HDBan">
+        <MappingFragment StoreEntitySet="HDBan">
+          <ScalarProperty Name="idHD" ColumnName="idHD" />
+          <ScalarProperty Name="ThanhTien" ColumnName="ThanhTien" />
+          <ScalarProperty Name="idNV" ColumnName="idNV" />
+          <ScalarProperty Name="MaHD" ColumnName="MaHD" />
+          <ScalarProperty Name="NgayVao" ColumnName="NgayVao" />
+          <ScalarProperty Name="NgayRa" ColumnName="NgayRa" />
+          <ScalarProperty Name="idCTKM" ColumnName="idCTKM" />
+          <ScalarProperty Name="idKhachHang" ColumnName="idKhachHang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HDSPBs">
+      <EntityTypeMapping TypeName="dbBidaModel.HDSPB">
+        <MappingFragment StoreEntitySet="HDSPB">
+          <ScalarProperty Name="idHDSPB" ColumnName="idHDSPB" />
+          <ScalarProperty Name="MaHDSPB" ColumnName="MaHDSPB" />
+          <ScalarProperty Name="idSPB" ColumnName="idSPB" />
+          <ScalarProperty Name="idNV" ColumnName="idNV" />
+          <ScalarProperty Name="ThanhTien" ColumnName="ThanhTien" />
+          <ScalarProperty Name="NgayBan" ColumnName="NgayBan" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="idKH" ColumnName="idKH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KhachHangs">
+      <EntityTypeMapping TypeName="dbBidaModel.KhachHang">
+        <MappingFragment StoreEntitySet="KhachHang">
+          <ScalarProperty Name="idKH" ColumnName="idKH" />
+          <ScalarProperty Name="MaKH" ColumnName="MaKH" />
+          <ScalarProperty Name="TenKH" ColumnName="TenKH" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="DienThoai" ColumnName="DienThoai" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="idGroupKH" ColumnName="idGroupKH" />
+          <ScalarProperty Name="DiemTichLuy" ColumnName="DiemTichLuy" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+          <ScalarProperty Name="idCKKM" ColumnName="idCKKM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KhuVucs">
+      <EntityTypeMapping TypeName="dbBidaModel.KhuVuc">
+        <MappingFragment StoreEntitySet="KhuVuc">
+          <ScalarProperty Name="IDKV" ColumnName="IDKV" />
+          <ScalarProperty Name="MaKV" ColumnName="MaKV" />
+          <ScalarProperty Name="TenKV" ColumnName="TenKV" />
+          <ScalarProperty Name="KVTinh" ColumnName="KVTinh" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MatHangs">
+      <EntityTypeMapping TypeName="dbBidaModel.MatHang">
+        <MappingFragment StoreEntitySet="MatHang">
+          <ScalarProperty Name="IDMH" ColumnName="IDMH" />
+          <ScalarProperty Name="MaHang" ColumnName="MaHang" />
+          <ScalarProperty Name="TenHang" ColumnName="TenHang" />
+          <ScalarProperty Name="IDDVT" ColumnName="IDDVT" />
+          <ScalarProperty Name="IDNhomMH" ColumnName="IDNhomMH" />
+          <ScalarProperty Name="Gia" ColumnName="Gia" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NhanViens">
+      <EntityTypeMapping TypeName="dbBidaModel.NhanVien">
+        <MappingFragment StoreEntitySet="NhanVien">
+          <ScalarProperty Name="idNV" ColumnName="idNV" />
+          <ScalarProperty Name="MaNV" ColumnName="MaNV" />
+          <ScalarProperty Name="TenNV" ColumnName="TenNV" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="DienThoai" ColumnName="DienThoai" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+          <ScalarProperty Name="userName" ColumnName="userName" />
+          <ScalarProperty Name="passWord" ColumnName="passWord" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NhomMatHangs">
+      <EntityTypeMapping TypeName="dbBidaModel.NhomMatHang">
+        <MappingFragment StoreEntitySet="NhomMatHang">
+          <ScalarProperty Name="IDNhomMH" ColumnName="IDNhomMH" />
+          <ScalarProperty Name="MaNhomMH" ColumnName="MaNhomMH" />
+          <ScalarProperty Name="TenNhomMH" ColumnName="TenNhomMH" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SanPhamBans">
+      <EntityTypeMapping TypeName="dbBidaModel.SanPhamBan">
+        <MappingFragment StoreEntitySet="SanPhamBan">
+          <ScalarProperty Name="idSPB" ColumnName="idSPB" />
+          <ScalarProperty Name="TenSPB" ColumnName="TenSPB" />
+          <ScalarProperty Name="DonGia" ColumnName="DonGia" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+          <ScalarProperty Name="MaSPB" ColumnName="MaSPB" />
+          <ScalarProperty Name="idDMSPB" ColumnName="idDMSPB" />
+          <ScalarProperty Name="idDVT" ColumnName="idDVT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="dbBidaModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserAdmins">
+      <EntityTypeMapping TypeName="dbBidaModel.UserAdmin">
+        <MappingFragment StoreEntitySet="UserAdmin">
+          <ScalarProperty Name="sdt" ColumnName="sdt" />
+          <ScalarProperty Name="diaChi" ColumnName="diaChi" />
+          <ScalarProperty Name="tenAdmin" ColumnName="tenAdmin" />
+          <ScalarProperty Name="SuDung" ColumnName="SuDung" />
+          <ScalarProperty Name="pAssWord" ColumnName="pAssWord" />
+          <ScalarProperty Name="uSername" ColumnName="uSername" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

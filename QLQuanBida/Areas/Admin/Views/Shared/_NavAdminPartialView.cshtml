@@ -1,0 +1,114 @@
+﻿<div class="side-nav">
+    <div class="side-nav-inner">
+        <ul class="side-nav-menu scrollable">
+
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="javascript:void(0);">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-appstore"></i>
+                    </span>
+                    <span class="title">Quản lý Bàn</span>
+                    <span class="arrow">
+                        <i class="arrow-icon"></i>
+                    </span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="@Url.Action("Index","Ban", new {area ="Admin"})">Danh mục bàn</a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Index","KhuVuc")">Khu vực</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="javascript:void(0);">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-hdd"></i>
+                    </span>
+                    <span class="title">Quản lý Khách hàng</span>
+                    <span class="arrow">
+                        <i class="arrow-icon"></i>
+                    </span>
+                </a>
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a href="@Url.Action("Index","KhachHang")">Danh sách khách hàng</a>
+                    </li>   
+                    <li>
+                        <a href="@Url.Action("Index","GroupKH")">Nhóm khách hàng</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="javascript:void(0);">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-team"></i>
+                    </span>
+                    <span class="title">Quản lý Nhân viên</span>
+                    <span class="arrow">
+                        <i class="arrow-icon"></i>
+                    </span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="/">Danh sách nhân viên</a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Index","ChamCong")">Chấm công nhân viên</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="javascript:void(0);">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-skin"></i>
+                    </span>
+                    <span class="title">Quản lý thực phẩm</span>
+                    <span class="arrow">
+                        <i class="arrow-icon"></i>
+                    </span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="@Url.Action("Index","NhomMatHang")">Danh mục thực phẩm</a>
+
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Index","MatHang")">List thực phẩm</a>
+
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Index","DonViTinh")">Đơn vị tính</a>
+
+                    </li>
+
+                </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="javascript:void(0);">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-skin"></i>
+                    </span>
+                    <span class="title">Quản lý User</span>
+                    <span class="arrow">
+                        <i class="arrow-icon"></i>
+                    </span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="@Url.Action("Index","UserAdmin")">User Admin</a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Index","NhanVien")">User Nhân viên  </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+

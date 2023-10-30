@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="165de0decfab4510ab07ce0cd4494540" Name="Diagram1">
+        <EntityTypeShape EntityType="dbBidaModel.Ban" Width="1.5" PointX="3.75" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBidaModel.ChamCong" Width="1.5" PointX="5.25" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBidaModel.CKKM" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBidaModel.CTHDBan" Width="1.5" PointX="6" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBidaModel.CTKhuyenMai" Width="1.5" PointX="6" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBidaModel.DanhMucSPB" Width="1.5" PointX="0.75" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBidaModel.DonViTinh" Width="1.5" PointX="0.75" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBidaModel.GroupKH" Width="1.5" PointX="0.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBidaModel.GuiCo" Width="1.5" PointX="5.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBidaModel.HDBan" Width="1.5" PointX="8.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBidaModel.HDSPB" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBidaModel.KhachHang" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBidaModel.KhuVuc" Width="1.5" PointX="1.5" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBidaModel.MatHang" Width="1.5" PointX="3.75" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBidaModel.NhanVien" Width="1.5" PointX="3" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBidaModel.NhomMatHang" Width="1.5" PointX="1.5" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBidaModel.SanPhamBan" Width="1.5" PointX="3" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBidaModel.sysdiagram" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="dbBidaModel.FK_Ban_KhuVuc" ManuallyRouted="false" />
+        <AssociationConnector Association="dbBidaModel.FK_CTHDBan_Ban" ManuallyRouted="false" />
+        <AssociationConnector Association="dbBidaModel.FK_ChamCong_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="dbBidaModel.FK_KhachHang_CKKM" ManuallyRouted="false" />
+        <AssociationConnector Association="dbBidaModel.FK_CTHDBan_MatHang" ManuallyRouted="false" />
+        <AssociationConnector Association="dbBidaModel.FK_HDBan_CTHDBan" ManuallyRouted="false" />
+        <AssociationConnector Association="dbBidaModel.FK_HDBan_CTKhuyenMai" ManuallyRouted="false" />
+        <AssociationConnector Association="dbBidaModel.FK_SanPhamBan_DanhMucSPB" ManuallyRouted="false" />
+        <AssociationConnector Association="dbBidaModel.FK_MatHang_DonViTinh" ManuallyRouted="false" />
+        <AssociationConnector Association="dbBidaModel.FK_SanPhamBan_DonViTinh" ManuallyRouted="false" />
+        <AssociationConnector Association="dbBidaModel.FK_KhachHang_GroupKH" ManuallyRouted="false" />
+        <AssociationConnector Association="dbBidaModel.FK_GuiCo_KhachHang" ManuallyRouted="false" />
+        <AssociationConnector Association="dbBidaModel.FK_GuiCo_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="dbBidaModel.FK_HDBan_KhachHang" ManuallyRouted="false" />
+        <AssociationConnector Association="dbBidaModel.FK_HDSPB_KhachHang" ManuallyRouted="false" />
+        <AssociationConnector Association="dbBidaModel.FK_HDSPB_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="dbBidaModel.FK_HDSPB_SanPhamBan" ManuallyRouted="false" />
+        <AssociationConnector Association="dbBidaModel.FK_MatHang_NhomMatHang" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="dbBidaModel.UserAdmin" Width="1.5" PointX="8.375" PointY="9.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,58 @@
+﻿@model IEnumerable<QLQuanBida.Models.ChamCong>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NgayLam)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VaoLam)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TanLam)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CaLam)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NhanVien.MaNV)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NgayLam)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VaoLam)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TanLam)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CaLam)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NhanVien.MaNV)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idChamCong }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idChamCong }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idChamCong })
+        </td>
+    </tr>
+}
+
+</table>

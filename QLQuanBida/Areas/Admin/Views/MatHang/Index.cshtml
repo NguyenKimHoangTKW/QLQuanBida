@@ -1,0 +1,64 @@
+﻿@model IEnumerable<QLQuanBida.Models.MatHang>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MaHang)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TenHang)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MoTa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DonViTinh.MaDVT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NhomMatHang.MaNhomMH)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaHang)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenHang)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MoTa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DonViTinh.MaDVT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NhomMatHang.MaNhomMH)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IDMH }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IDMH }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IDMH })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,46 @@
+﻿@model IEnumerable<QLQuanBida.Models.DonViTinh>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MaDVT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TenDVT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MoTa)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaDVT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenDVT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MoTa)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IDDVT }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IDDVT }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IDDVT })
+        </td>
+    </tr>
+}
+
+</table>

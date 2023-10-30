@@ -1,0 +1,67 @@
+﻿@model QLQuanBida.Models.MatHang
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MatHang</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MaHang)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaHang)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TenHang)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenHang)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MoTa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MoTa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DonViTinh.MaDVT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DonViTinh.MaDVT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NhomMatHang.MaNhomMH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NhomMatHang.MaNhomMH)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IDMH }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

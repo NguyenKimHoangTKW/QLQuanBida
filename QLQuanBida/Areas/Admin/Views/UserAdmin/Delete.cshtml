@@ -1,0 +1,73 @@
+﻿@model QLQuanBida.Models.UserAdmin
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>UserAdmin</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.uSername)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.uSername)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pAssWord)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pAssWord)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SuDung)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SuDung)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tenAdmin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tenAdmin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.diaChi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.diaChi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sdt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sdt)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
